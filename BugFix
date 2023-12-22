@@ -1,0 +1,54 @@
+# create a new Git repo in current directory
+git init
+
+# check the status of the repository and check existing files
+git status
+
+# add all files and directory to the staging area
+git add .
+
+# commit the changes and desrcibe with a message
+git commit -m "First Commit"
+
+# default branch name changed to main
+git branch -m main
+
+# link the local repo to the remote repo in GitHub
+git remote add origin https://github.com/NiallMc2/PowerShell.git
+
+# push the changes to main branch in GitHub repo
+git push -u origin main
+
+# create a new branch called Dev
+git branch Dev
+
+# display preivous commits
+git log
+
+# change to branch Dev- allows VSC to commit changes
+git checkout Dev
+
+# create a new branch called test
+git branch test
+
+# change to branch test- allows VSC to commit changes
+git checkout test
+
+git log
+
+# change back to test branch
+git checkout test
+
+# Merge changes from the "bug-fix-readme" branch into the current "test" branch
+git merge bug-fix-readme
+
+# Delete the local branch named "bug-fix-readme"
+git branch -d bug-fix-readme
+
+# Delete the remote branch named "bug-fix-readme" on the remote repository "origin"
+git push origin --delete bug-fix-readme
+
+# Check the status of the repository to see any pending changes
+git status
+
+# Push the changes with comments to the current branch
