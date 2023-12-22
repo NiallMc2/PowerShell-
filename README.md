@@ -15,3 +15,4 @@ A repo was created in GitHub, this is a public repo with a README file. Gitignor
 8. A branch called BugFix was created on the Test Branch
 9. A file called BugFix was added to the branch BugFix.
 10. Changes were pulled from GitHub and merged
+11. After merging Test and Bugfix into main both were deleted
